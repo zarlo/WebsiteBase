@@ -1,0 +1,43 @@
+html{
+
+}
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    background-color: black;
+    background-image: url();
+  }
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.content{
+height: 100%;
+background-color: white;
+
+}
+
+.copyright p{
+color: white;
+
+}
+
+.navbar{
+
+color: black;
+
+}
+.navbar-fixed-top .navbar-brand {
+    padding: 0 19px;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
