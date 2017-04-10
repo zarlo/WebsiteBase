@@ -1,6 +1,6 @@
 /Page/*
 !/Page/blog.php
-!/Page/Error/*
+!/Page/Error/
 !/Page/Login.php
 !/Page/Register.php
 
