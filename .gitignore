@@ -7,7 +7,7 @@
 /vendor/*
 
 /assets/*
-!/assets/css/*
+!/assets/css/Main.css
 
 /Config.php
 
