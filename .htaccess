@@ -1,0 +1,16 @@
+RewriteEngine On
+
+IndexIgnore *
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^assets/(.*)$ assets/$1 [L]
+RewriteRule ^([^/].*)/assets/(.*)$ assets/$2 [L]
+
+RewriteRule ^(.*)$ index.php [L]
+
+# Error Documents
+ErrorDocument 401 /index.php?p=Error&name=401
+ErrorDocument 403 /index.php?p=Error&name=403
+ErrorDocument 404 /index.php?p=Error&name=404
+ErrorDocument 500 /index.php?p=Error&name=500

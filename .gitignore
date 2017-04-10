@@ -1,0 +1,15 @@
+/Page/*
+!/Page/blog.php
+!/Page/Error/*
+!/Page/Login.php
+!/Page/Register.php
+
+/vendor/*
+
+/assets/*
+!/assets/css/*
+
+/Config.php
+
+/api/*
+!/api/API.php
