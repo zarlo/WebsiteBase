@@ -19,7 +19,13 @@ ob_start("sanitize_output");
 
 $Request_URL =  rtrim(explode('?',$_SERVER[REQUEST_URI])[0], '/');
 $Base_URL = $_SERVER['HTTP_HOST'];
+?>
+<script type="text/javascript">
 
+var URL = <?php   echo $Request_URL;?>;
+
+</script>
+<?php
 require __DIR__ . '/vendor/autoload.php';
 
 \Delight\Cookie\Session::start('Strict');
@@ -141,6 +147,6 @@ if ($auth->isBanned()) {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script src="assets/js/Main.js"/>
 </body>
 </html>

@@ -4,11 +4,12 @@
 !/Page/Blog/
 !/Page/Login.php
 !/Page/Register.php
+!/Page/Logout.php
 
 /vendor/*
 
 /assets/*
-!/assets/js/Main.js
+!/assets/js/
 !/assets/css/
 
 /Config.php
