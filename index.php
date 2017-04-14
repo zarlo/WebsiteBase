@@ -18,6 +18,7 @@ function sanitize_output($buffer) {
 ob_start("sanitize_output");
 
 $Request_URL =  rtrim(explode('?',$_SERVER[REQUEST_URI])[0], '/');
+$Base_URL = $_SERVER['HTTP_HOST'];
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -29,13 +30,11 @@ $db = new PDO('mysql:dbname=' . $config['DB']['Table'] . ';host=' . $config['DB'
 
 $auth = new \Delight\Auth\Auth($db,true);
 
-
 if(substr($Request_URL,0,5) == "/API/")
 {
 include 'api/API.php';
 exit(0);
 }
-
 
 if ($auth->isBanned()) {
  $auth->logout();
@@ -114,7 +113,6 @@ if ($auth->isBanned()) {
     }
     else
     {
-
       if(file_exists('Page/' . $Request_URL . '.php'))
       {
         include 'Page/' . $Request_URL . '.php';
@@ -123,7 +121,7 @@ if ($auth->isBanned()) {
       {
          include 'Page/Error/404.php';
       }
-  }
+    }
   }
 
 ?>

@@ -1,12 +1,14 @@
 /Page/*
 !/Page/blog.php
 !/Page/Error/
+!/Page/Blog/
 !/Page/Login.php
 !/Page/Register.php
 
 /vendor/*
 
 /assets/*
+!/assets/js/Main.js
 !/assets/css/
 
 /Config.php
