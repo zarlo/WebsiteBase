@@ -6,7 +6,8 @@
 !/Page/Register.php
 !/Page/Logout.php
 
-/vendor/*
+/cache/*
+!/cache/.txt
 
 /assets/*
 !/assets/js/

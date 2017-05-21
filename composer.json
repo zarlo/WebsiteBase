@@ -1,6 +1,7 @@
 {
     "require": {
         "delight-im/auth": "^5.0",
-        "phpmailer/phpmailer": "^5.2"
+        "phpmailer/phpmailer": "^5.2",
+        "twig/twig": "^2.0"
     }
 }
